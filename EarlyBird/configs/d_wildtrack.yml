@@ -1,0 +1,10 @@
+data:
+  class_path: datasets.PedestrianDataModule
+  init_args:
+    data_dir: "/usr/home/tee/Developer/datasets/WILDTRACK"
+model:
+  resolution: [120, 2, 360]  # Y,Z,X
+  bounds: [0, 1440, 0, 480, 0, 200]  # xmin,xmax,ymin,ymax,zmin,zmax
+  depth: [100, 0, 2000]
+  num_cameras: 7
+  num_ids: 1201
