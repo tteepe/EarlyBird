@@ -1,5 +1,11 @@
 # Early Bird 🦅
 
+**EarlyBird: Early-Fusion for Multi-View Tracking in the Bird's Eye View**
+
+Torben Teepe, Philipp Wolters, Johannes Gilg, Fabian Herzog, Gerhard Rigoll
+
+[![arxiv](https://img.shields.io/badge/arXiv-2310.13350-red)](https://arxiv.org/abs/2310.13350)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/earlybird-early-fusion-for-multi-view/multi-object-tracking-on-wildtrack)](https://paperswithcode.com/sota/multi-object-tracking-on-wildtrack?p=earlybird-early-fusion-for-multi-view)
 
 ## Usage
 
@@ -32,3 +38,17 @@ python main.py test -c model_weights/config.yaml \
 ## Acknowledgement
 - [Simple-BEV](https://simple-bev.github.io): Adam W. Harley
 - [MVDeTr](https://github.com/hou-yz/MVDeTr): Yunzhong Hou
+
+## Cite
+If you use EarlyBird, please use the following BibTeX entry.
+
+```
+@misc{teepe2023earlybird,
+      title={Early{B}ird: Early-Fusion for Multi-View Tracking in the Bird's Eye View}, 
+      author={Torben Teepe and Philipp Wolters and Johannes Gilg and Fabian Herzog and Gerhard Rigoll},
+      year={2023},
+      eprint={2310.13350},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
