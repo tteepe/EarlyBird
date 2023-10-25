@@ -8,7 +8,6 @@ import utils.basic
 from kornia.geometry.transform.imgwarp import warp_perspective
 from models.encoder import Encoder_res101, Encoder_res50, Encoder_res18, Encoder_eff, Encoder_swin_t, Encoder_res34
 from models.decoder import Decoder
-from models.ops.trans_world_feat import DeformTransWorldFeat_aio
 
 
 class MVDet(nn.Module):
@@ -54,7 +53,6 @@ class MVDet(nn.Module):
                 nn.InstanceNorm3d(latent_dim), nn.ReLU(),
                 # nn.Conv3d(latent_dim, latent_dim, 3, padding=(1, 2, 2), dilation=(1, 2, 2)),
             )
-            self.world_feat = DeformTransWorldFeat_aio(1, (self.Y, self.X), latent_dim, out_dim=latent_dim)
         else:
             self.world_feat = nn.Sequential(
                 nn.Conv2d(self.feat2d_dim * self.num_cameras, latent_dim, kernel_size=3, padding=1),
