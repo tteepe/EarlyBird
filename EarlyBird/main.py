@@ -28,7 +28,7 @@ class WorldTrackModel(pl.LightningModule):
             depth=(100, 2.0, 25),
             scene_centroid=(0.0, 0.0, 0.0),
             max_detections=60,
-            conf_threshold=0.5,
+            conf_threshold=0.4,
             gating_threshold=1000,
     ):
         super().__init__()
